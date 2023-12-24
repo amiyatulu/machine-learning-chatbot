@@ -3,17 +3,17 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pdf-chatbot"
+name = "machine-learning-chatbot"
 version = "0.0.1"
 description = ""
 dependencies = [
+    "pymupdf",
+    "chromadb ==0.4.21",
+    "faiss-cpu ==1.7.4",
+    "gpt4all ==2.0.2",
     "langchain ==0.0.352",
     "openai ==1.6.1",
-    "chromadb ==0.4.21",
-    "pymupdf",
-    "tiktoken ==0.5.2",
-    "gpt4all ==2.0.2",
-    "faiss-cpu ==1.7.4",
-    "transformers ==4.36.2",
     "sentence-transformers ==2.2.2",
+    "tiktoken ==0.5.2",
+    "transformers ==4.36.2",
 ]
